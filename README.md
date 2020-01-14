@@ -14,6 +14,7 @@ Once that number (the sum of the rows and columns) is reached, that card gets
 new number.<br>
  In addition, in some places on the board, there are two special fields: smiley and
 sad face. If a player opens the smiley field, then that player's points are scored
-redouble. If the player opens the field where sad face is, then the player who played that move loses all points, and from that moment on the game resumes with 0 points. After opening
-placed or angry, a new number is dialed behind the card, while the smiley and angry switch to another (random)
-position. Initially, the board contains 4 smiles and 4 chives.</p>
+redouble. If the player opens the field where sad face is, then the player who played that move loses all points, and from that moment on the game resumes with 0 points. 
+ After opening
+smiley or sad face, a new number is dialed behind the card, while the smiley and sad face switch to another (random)
+position. Initially, the board contains 4 smiles and 4 sad faces.</p>
