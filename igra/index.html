@@ -1,0 +1,88 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>CardsS</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+  </head>
+
+  <body>
+  	<div class="container">
+  		<header>
+            <h1>Cards</h1>
+
+        </header>
+        <button onclick="novaIgra()">Nova igra</button>
+  		<section class="score">
+  			<div class="igrac1">
+	        	<h3>Igrač A</h3>
+		  		<p class="Player1">Rezultat :<span id="rezultat1"></span></p>
+	  		</div>
+	  		<div class="igrac2">
+		    	<h3>Igrač B</h3>
+	  			<p class="Player2">Rezultat : <span id="rezultat2"></span></p>	
+	  		</div>
+        </section>
+		<ul class="karte">
+		    <li class="karta"><button class="2" value="0" id="0" onclick="prikazi(this.id);myFunction(this.id)"><p id="vrijednost0"></p></button></li>
+		    <li class="karta"><button class="3" value="0" id="1" onclick="myFunction(this.id);prikazi(this.id)"><p id="vrijednost1"></p></button></li>
+		    <li class="karta"><button class="4" value="0" id="2" onclick="myFunction(this.id);prikazi(this.id)"><p id="vrijednost2"></p></button></li>
+		    <li class="karta"><button class="5" value="0" id="3" onclick="myFunction(this.id);prikazi(this.id)"><p id="vrijednost3"></p></button></li>
+		    <li class="karta"><button class="6" value="0" id="4" onclick="myFunction(this.id);prikazi(this.id)"><p id="vrijednost4"></p></button></li>
+		
+		    <li class="karta"><button class="3" value="0" id="5" onclick="myFunction(this.id);prikazi(this.id)"><p id="vrijednost5"></p></button></li>
+		    <li class="karta"><button class="4" value="0" id="6" onclick="myFunction(this.id);prikazi(this.id)"><p id="vrijednost6"></p></button></li>
+		    <li class="karta"><button class="5" value="0" id="7" onclick="myFunction(this.id);prikazi(this.id)"><p id="vrijednost7"></p></button></li>
+		    <li class="karta"><button class="6" value="0" id="8" onclick="myFunction(this.id);prikazi(this.id)"><p id="vrijednost8"></p></button></li>
+	    	<li class="karta"><button class="7" value="0" id="9" onclick="myFunction(this.id);prikazi(this.id)"><p id="vrijednost9"></p></button></li>
+	    
+		    <li class="karta"><button class="4" value="0" id="10" onclick="myFunction(this.id);prikazi(this.id)"><p id="vrijednost10"></p></button></li>
+		    <li class="karta"><button class="5" value="0" id="11" onclick="myFunction(this.id);prikazi(this.id)"><p id="vrijednost11"></p></button></li>
+		    <li class="karta"><button class="6" value="0" id="12" onclick="myFunction(this.id);prikazi(this.id)"><p id="vrijednost12"></p></button></li>
+		    <li class="karta"><button class="7" value="0" id="13" onclick="myFunction(this.id);prikazi(this.id)"><p id="vrijednost13"></p></button></li>
+		    <li class="karta"><button class="8" value="0" id="14" onclick="myFunction(this.id);prikazi(this.id)"><p id="vrijednost14"></p></button></li>
+
+		    <li class="karta"><button class="5" value="0" id="15" onclick="myFunction(this.id);prikazi(this.id)"><p id="vrijednost15"></p></button></li>
+		    <li class="karta"><button class="6" value="0" id="16" onclick="myFunction(this.id);prikazi(this.id)"><p id="vrijednost16"></p></button></li>
+		    <li class="karta"><button class="7" value="0" id="17" onclick="myFunction(this.id);prikazi(this.id)"><p id="vrijednost17"></p></button></li>
+		    <li class="karta"><button class="8" value="0" id="18" onclick="myFunction(this.id);prikazi(this.id)"><p id="vrijednost18"></p></button></li>
+		    <li class="karta"><button class="9" value="0" id="19" onclick="myFunction(this.id);prikazi(this.id)"><p id="vrijednost19"></p></button></li>
+
+		    <li class="karta"><button class="6" value="0" id="20" onclick="myFunction(this.id);prikazi(this.id)"><p id="vrijednost20"></p></button></li>
+		    <li class="karta"><button class="7" value="0" id="21" onclick="myFunction(this.id);prikazi(this.id)"><p id="vrijednost21"></p></button></li>
+		    <li class="karta"><button class="8" value="0" id="22" onclick="myFunction(this.id);prikazi(this.id)"><p id="vrijednost22"></p></button></li>
+		    <li class="karta"><button class="9" value="0" id="23" onclick="myFunction(this.id);prikazi(this.id)"><p id="vrijednost23"></p></button></li>
+		    <li class="karta"><button class="10" value="0" id="24" onclick="myFunction(this.id);prikazi(this.id)"><p id="vrijednost24"></p></button></li>
+	    </ul>
+	    <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2 class="igrac">Na redu je igrač B</h2>
+                <a class="close" href=# >×</a>
+            </div>
+        </div>
+       
+       <div id="popup2" class="overlay">
+            <div class="popup">
+                <h2 class="igrac">Na redu je igrač A</h2>
+                <a class="zatvori" href=# >×</a>
+            </div>
+        </div>
+        <div id="popup3" class="overlay">
+            <div class="popup">
+                <h2 class="igrac">Game over ! Pobijedio je igrač A</h2>
+                <<button class="zatv"  onclick="novaIgra()">Nova igra</button>
+                <a href="../index.html" >Close</a>
+            </div>
+        </div>
+        <div id="popup4" class="overlay">
+            <div class="popup">
+                <h2 class="igrac">Game over ! Pobijedio je igrač B</h2>
+                <button class="zat"  onclick="novaIgra()">Nova igra</button>
+                <a href="../index.html" >Close</a>
+            </div>
+        </div>
+	    
+	</div>
+	
+	<script src="../js/script.js"></script>
+</body>
+</html>

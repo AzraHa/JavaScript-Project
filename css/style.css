@@ -1,0 +1,266 @@
+
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background: #ffffff;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 16px;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.header{
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0; 
+  width: 100%; 
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+
+.naslovna {
+  background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.naslovna-center h1,.upute h1{
+  text-transform: uppercase;
+  font-size: 50px;
+  color: #333;
+
+}
+.upute{
+	flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  }
+.upute p{
+	margin: 0 auto;
+	width: 50%;
+	font-size: 30px;
+}
+.o-projektu{
+	display: flex;
+	flex-direction: row;
+}
+.o-projektu ul li{
+	list-style-type: none;
+	font-size: 20px;
+}
+.o-projektu{
+	justify-content: center;
+	align-items: center;
+}
+.faks,.o-meni{
+	margin: 20px;
+	padding: 20px;
+	width: 45%;
+	height: 300px;
+}
+.faks{
+	background-color: #000;
+	color:#fff;
+}
+.o-meni{
+	color: #000;
+	border: 1px solid #000;
+}
+
+.karte {
+	width: 85%;
+	background: #716F71;
+	padding: 1rem;
+	border-radius: 4px;
+	box-shadow: 8px 9px 26px 0 rgba(46, 61, 73, 0.5);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0 0 3em;
+}
+
+.karte .karta {
+	height: 3.7rem;
+	width: 3.7rem;
+	margin: 0.2rem 0.2rem;
+	background: #141214;;
+	font-size: 0;
+	color: #ffffff;
+	border-radius: 5px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+}
+
+.score {
+	text-align: left;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+.score .igrac1{
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	margin: 0 5px 0 0;
+}
+.igrac2{
+	display: inline-block;
+	margin: 0 1rem;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.overlay:target {
+	visibility: visible;
+	opacity: 1;
+}
+  
+  
+.popup {
+	margin: 70px auto;
+	padding: 20px;
+	background: #ffffff;
+	border-radius: 5px;
+	width: 50%;
+	position: relative;
+	transition: all 5s ease-in-out;
+	font-family: 'Gloria Hallelujah', cursive;
+}
+  
+.popup h2 {
+	margin-top: 0;
+	color: #333;
+	font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close,.popup .zatvori,.popup .zatv ,.popup .zat{
+	position: absolute;
+	top: 50px;
+	right: 30px;
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #333;
+}
+
+.popup .close:hover {
+	color: #E5F720;
+}
+
+
+
+.show {
+	visibility: visible !important;
+	opacity: 100 !important;
+}
+
+li button{
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+@media (max-width: 690px) {
+	.karte {
+		width: 85%;
+	}
+
+	.karte .karta {
+		height: 4rem;
+		width: 4.5rem;
+	}
+}
+@media (min-width: 768px) {
+	.container {
+		font-size: 22px;
+	}
+	.karte {
+		width: 700px;
+		height: 600px;
+	}
+	.karte .karta {
+		height: 105px;
+		width: 125px;
+	}
+}
+
+#vrijednost0,#vrijednost1,#vrijednost2,#vrijednost3,#vrijednost4,#vrijednost5,
+#vrijednost6,#vrijednost7,#vrijednost8,#vrijednost9,#vrijednost10,#vrijednost11,
+#vrijednost12,#vrijednost13,#vrijednost14,#vrijednost15,#vrijednost16,#vrijednost17,
+#vrijednost18,#vrijednost19,#vrijednost20,#vrijednost21,#vrijednost22,#vrijednost23,#vrijednost24 {
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    display: none;
+}
+
+#vrijednost0.prikazi,#vrijednost1.prikazi,#vrijednost2.prikazi,#vrijednost3.prikazi,#vrijednost4.prikazi,
+#vrijednost5.prikazi,#vrijednost6.prikazi,#vrijednost7.prikazi,#vrijednost8.prikazi,#vrijednost9.prikazi,
+#vrijednost10.prikazi,#vrijednost11.prikazi,#vrijednost12.prikazi,#vrijednost13.prikazi,#vrijednost14.prikazi,
+#vrijednost15.prikazi,#vrijednost16.prikazi,#vrijednost17.prikazi,#vrijednost18.prikazi,#vrijednost19.prikazi,
+#vrijednost20.prikazi,#vrijednost21.prikazi,#vrijednost22.prikazi,#vrijednost23.prikazi,#vrijednost24.prikazi{
+    opacity: 1;
+    transition: none;
+    display: inline-block;
+    font-size: 30px;
+   	color:#000;
+}
